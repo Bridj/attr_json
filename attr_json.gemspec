@@ -40,8 +40,6 @@ attributes use as much of the existing ActiveRecord architecture as we can.}
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = '>= 2.4.0'
-
   # Only to get CI to work on versions of Rails other than we release with,
   # should never release a gem with RAILS_GEM set!
   unless ENV['APPRAISAL_INITIALIZED'] || ENV["TRAVIS"]
